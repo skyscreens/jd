@@ -33,7 +33,7 @@ jobs:
         if: env.JD_COOKIE
         run: |
           cd ~/jd
-          node jd_fruit.js
+          node Task/jd_fruit.js
         env:
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
