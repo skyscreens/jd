@@ -27,13 +27,13 @@ jobs:
       - name: npm install
         if: env.JD_COOKIE
         run: |
-          cd ~/jd/Task
+         cd ~/Clone202012/jd_scripts
           npm install
-      - name: '运行 【京东抽奖机】'
+      - name: '运行 【jd_fruit】'
         if: env.JD_COOKIE
         run: |
-          cd ~/jd/Task
-          node jdfruit.js
+          cd ~/Clone202012/jd_scripts
+          node jd_fruit.js
         env:
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
