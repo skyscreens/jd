@@ -32,8 +32,8 @@ jobs:
       - name: '运行 【jd_fruit】'
         if: env.JD_COOKIE
         run: |
-          cd ~/Clone202012/jd_scripts
-          node Task/jd_fruit.js
+          cd ~/jd/Task
+          node jd_fruit.js
         env:
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
