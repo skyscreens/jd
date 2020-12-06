@@ -29,11 +29,11 @@ jobs:
         run: |
           cd ~/jd
           npm install
-      - name: '运行 【jd_fruit】'
+      - name: '运行 【京东抽奖机】'
         if: env.JD_COOKIE
         run: |
-          cd ~/jd
-          node Task/jd_fruit.js
+          cd ~/Scripts
+          node Task/jdfruit.js
         env:
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
