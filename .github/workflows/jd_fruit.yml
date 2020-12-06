@@ -27,7 +27,7 @@ jobs:
       - name: npm install
         if: env.JD_COOKIE
         run: |
-          cd ~/jd/Task
+          cd ~/Clone202012/jd_scripts
           npm install
       - name: '运行 【jd_fruit】'
         if: env.JD_COOKIE
