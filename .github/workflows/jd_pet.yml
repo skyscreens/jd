@@ -19,7 +19,8 @@ jobs:
     steps:
       - name: Checkout
         run: |
-          git clone https://github.com/skyscreens/jd.git ~/scripts
+          git clone https://github.com/skyscreens/jd.git ~/jd
+          
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
         with:
