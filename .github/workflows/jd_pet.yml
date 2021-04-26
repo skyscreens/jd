@@ -17,8 +17,8 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event.repository.owner.id == github.event.sender.id
     steps:
-      - name: Checkout
-         r run: |
+      - name: Checkout 
+        run: |
           git clone https://github.com/nbzongzong/jd_scripts1207.git ~/scripts
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v1
